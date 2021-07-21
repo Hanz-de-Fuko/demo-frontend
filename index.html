@@ -284,6 +284,16 @@
 
         <div class="app__container">
             <div class="grid wide">
+                <div class="row sm-gutter banner">
+                    <div class="col l-8 m-12 c-12">
+                        <div class="slider">
+                        </div>
+                    </div>
+                    <div class="col l-4 m-0 c-0">
+                        <div class="credit">
+                        </div>
+                    </div>
+                </div>
                 <div class="row sm-gutter app__content">
                     <div class="col l-2 m-0 c-0">
                             <nav class="category">
@@ -1356,5 +1366,26 @@
             </div>
         </div>
     </div> -->
+
+
+    <!-- Modal -->
+    <input id="modal-btn" type="checkbox">
+    <label for="modal-btn" class="modal">
+        <div class="modal-container">
+            <a href="https://shopee.vn/flash_sale">
+                <div class="modal-link"></div>
+            </a>
+            <label for="modal-btn" class="modal-close">
+                <i class="fas fa-times-circle"></i>
+            </label>
+        </div>
+    </label>
+
+    <script>
+        var autoModal = () => {
+            document.getElementById('modal-btn').click();
+        }
+        setTimeout(autoModal, 3000);
+    </script>
 </body>
 </html>
