@@ -926,7 +926,7 @@
 }
 
 .app__content {
-    padding: 36px;
+    padding: 16px 0;
     display: flex;
 }
 
@@ -1379,4 +1379,91 @@ i.home-product-item__like-icon-fill {
     padding: 8px 0;
     text-align: center;
     margin-top: 20px;
+}
+
+
+/* Carousel */
+.banner {
+    padding-top: 16px;
+}
+.slider {
+    height: 300px;
+    background: url(../img2/darkwood1.jpg) no-repeat center;
+    background-size: cover;
+    animation: slide linear infinite 20s;
+}
+
+@keyframes slide {
+    20% {
+        background: url(../img2/darkwoodEclat2.jpg) no-repeat center;
+        background-size: cover;
+    }
+    40% {
+        background: url(../img2/Hanz-de-Fuko-Products3.jpg) no-repeat center;
+        background-size: cover;
+    }
+    60% {
+        background: url(../img2/thuong-hieu-romano5.jpg) no-repeat center;
+        background-size: cover;
+    }
+    80% {
+        background: url(../img2/urban6.jpg) no-repeat center;
+        background-size: cover;
+    }
+}
+
+.credit {
+    height: 300px;
+    background: url(../img2/tpbank.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    border-radius: 15px;
+}
+
+.modal-link {
+    width: 380px;
+    height: 380px;
+    background: url(../img2/sale.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.modal-close {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff; 
+    border-radius: 2.5rem;;
+}
+
+#modal-btn {
+    display: none;
+}
+
+#modal-btn:checked + .modal {
+    display: flex;
 }
